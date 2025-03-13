@@ -1,0 +1,130 @@
+/* General Styling */
+.reservation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* Stats and Table Status Box */
+.stats-container,
+.table-status,
+.reservation-form {
+  width: 70%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Stats Grid */
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px;
+}
+
+.stats-box {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  background: #e0e0e0;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.stats-box:hover {
+  background: black;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Table Grid */
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.table-box {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.table-box:hover {
+  background: lightgray;
+  transform: scale(1.05);
+}
+
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  background: #d99393;
+  color: white;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+/* Reservation Form Styling */
+.reservation-form h3 {
+  text-align: center;
+}
+
+.reservation-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input Fields */
+/* Input Fields - Same Size */
+.reservation-form input,
+.reservation-form select {
+  width: calc(100% - 24px); /* Ensures uniform width */
+  height: 45px; /* Same height for all fields */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: block;
+  margin-bottom: 12px;
+}
+
+/* Date Picker - Same Size */
+.reservation-form input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 45px;
+}
+
+/* Submit Button - Same Width & Height */
+.reservation-form button {
+  width: 100%;
+  height: 45px;
+  font-size: 16px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+/* Hover Effect */
+.reservation-form input:hover,
+.reservation-form select:hover {
+  border-color: #444;
+}
+
+.reservation-form button:hover {
+  background: darkgray;
+  color: black;
+}

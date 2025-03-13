@@ -1,0 +1,209 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6255da;
+  padding: 15px 40px;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.hotel-logo {
+  width: 50px; /* Adjust size as needed */
+  height: 50px;
+  margin-right: 10px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center; /* Ensures heading and description are properly centered */
+}
+
+/* Left Side - Image */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.restaurant-image {
+  width: 400%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Right Side - Text */
+.text-container {
+  flex: 1;
+  text-align: center; /* Ensures heading and text are properly aligned */
+  padding-left: 50px;
+}
+
+/* Heading: "WELCOME TO INDIAN RESTAURANT" */
+.animated-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #8c76ee;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 10px; /* Adds spacing below heading */
+}
+
+/* Description Alignment */
+.description {
+  font-size: 35px;
+  color: #333;
+  max-width: 80%;
+  margin: 0 auto; /* Centers the description */
+  text-align: justify; /* Ensures proper text alignment */
+  line-height: 1.6; /* Improves readability */
+  margin-top: 20px;
+}
+
+/* Book Now Button */
+.book-now {
+  background-color: #d0abeb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto; /* Centers the button */
+}
+
+.book-now:hover {
+  background-color: #b176db;
+}
+
+/* Word-by-word fade-in animation */
+.word {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+/* Delay each word */
+.word:nth-child(1) {
+  animation-delay: 0.5s;
+}
+.word:nth-child(2) {
+  animation-delay: 1s;
+}
+.word:nth-child(3) {
+  animation-delay: 1.5s;
+}
+.word:nth-child(4) {
+  animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main Content */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding: 20px;
+}
+
+/* Left: Hotel Image */
+.image-section img {
+  width: 700px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Right: Description */
+.description-container {
+  max-width: 500px;
+  margin-left: 40px;
+}
+
+.description-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.description-container p {
+  font-size: 25px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Button Style Fix */
+.book-now {
+  background-color: #5c4cec;
+  color: white;
+  padding: 12px 20px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.book-now:hover {
+  background-color: #6253e0;
+}

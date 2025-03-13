@@ -1,0 +1,104 @@
+/* Background & Layout */
+.luxury-services-container {
+  background: url("https://source.unsplash.com/1600x900/?luxury,dining")
+    center/cover no-repeat;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Title & Description */
+.luxury-services-title {
+  font-size: 36px;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.luxury-description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Services Grid */
+.luxury-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Service Cards */
+.luxury-service-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.luxury-service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Service Icons */
+.service-icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.luxury-service-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.luxury-service-card p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* Customer Feedback Section */
+.feedback-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.feedback-card {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feedback-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.customer-rating {
+  font-size: 22px;
+  color: gold;
+  margin-bottom: 5px;
+}
+
+.customer-review {
+  font-size: 16px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.customer-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
